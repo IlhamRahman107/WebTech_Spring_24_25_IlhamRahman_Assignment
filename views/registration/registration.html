@@ -12,7 +12,7 @@
     <nav>
       <div class="nav-container">
         <div class="logo">
-          <h1>Ilham Rahman Assignment</h1>
+          <h1>Assignment</h1>
         </div>
         <div class="links">
           <div class="link">
@@ -65,9 +65,9 @@
         <tr>
           <td><label for="gender">Gender: </label></td>
           <td id="gender">
-            <input type="radio" value="male" />Male
-            <input type="radio" value="female" />Female
-            <input type="radio" value="female" />Other
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female
+            <input type="radio" name="gender" value="female" />Other
           </td>
         </tr>
         <tr>
@@ -75,16 +75,19 @@
           <td id="empType">
             <input type="checkbox" value="fullTime" />Full-Time
             <input type="checkbox" value="partTime" />Part-Time
-            <input type="checkbox" value="intern" />Intern
           </td>
         </tr>
         <tr>
           <td>
-            <button type="submit" id="submit">Submit</button>
             <button type="reset" id="reset">Reset</button>
+          </td>
+          <td>
+            <button type="submit" id="submit">Submit</button>
           </td>
         </tr>
       </table>
     </form>
+
+    <!-- submit display section -->
   </body>
 </html>
