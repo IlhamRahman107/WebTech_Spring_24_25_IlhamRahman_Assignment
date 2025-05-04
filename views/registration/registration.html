@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration | Assignment</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./registration.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <h1>Ilham Rahman Assignment</h1>
+        </div>
+        <div class="links">
+          <div class="link">
+            <a href="../../index.html">Home</a>
+          </div>
+          <div class="link">
+            <a href="./registration.html">Register New Employee</a>
+          </div>
+          <div class="link">
+            <a href="../employee/employees.html">View Sample Employee List</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+    <form action="#" method="post" onsubmit="validateForm()">
+      <table>
+        <tr>
+          <td><label for="eid">Employee ID: </label></td>
+          <td><input type="text" id="eid" /></td>
+          <td><span id="eidError"></span></td>
+        </tr>
+        <tr>
+          <td><label for="fName">Full Name: </label></td>
+          <td><input type="text" id="fName" /></td>
+          <td><span id="fNameError"></span></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email: </label></td>
+          <td><input type="text" id="email" /></td>
+          <td><span id="emailError"></span></td>
+        </tr>
+        <tr>
+          <td><label for="dept">Department: </label></td>
+          <td>
+            <select name="dept" id="dept">
+              <option value="#">Select</option>
+              <option value="HR">HR</option>
+              <option value="Sales">Sales</option>
+              <option value="IT">IT</option>
+              <option value="Marketing">Marketing</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="jd">Joining Date: </label></td>
+          <td><input type="date" id="jd" /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender: </label></td>
+          <td id="gender">
+            <input type="radio" value="male" />Male
+            <input type="radio" value="female" />Female
+            <input type="radio" value="female" />Other
+          </td>
+        </tr>
+        <tr>
+          <td><label for="empType">Employee Type: </label></td>
+          <td id="empType">
+            <input type="checkbox" value="fullTime" />Full-Time
+            <input type="checkbox" value="partTime" />Part-Time
+            <input type="checkbox" value="intern" />Intern
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
