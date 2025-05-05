@@ -99,12 +99,7 @@ table tr td {
   padding-bottom: 20px;
   padding-left: 50px;
   text-align: center;
-}
-
-table tr td label {
   font-size: 20px;
-  font-weight: bold;
-  padding-left: 30px;
 }
 
 table tr td button {
