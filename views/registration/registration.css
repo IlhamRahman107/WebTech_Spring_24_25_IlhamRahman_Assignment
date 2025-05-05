@@ -74,7 +74,7 @@ body {
 table {
   margin: auto;
   margin-top: 5rem;
-  width: 30rem;
+  width: auto;
   box-shadow: 0 0 10px;
   border-radius: 10px;
   padding: 25px;
@@ -103,6 +103,12 @@ table tr td select {
   border-radius: 10px;
 }
 
+table tr td span {
+  color: red;
+  font-weight: bold;
+  font-size: large;
+}
+
 table tr td button {
   width: 100px;
   padding: 5px;
@@ -113,7 +119,7 @@ table tr td button {
 }
 
 table tr td #reset {
-  margin-left: 100px;
+  margin-left: 75px;
 }
 
 /* submit display section */

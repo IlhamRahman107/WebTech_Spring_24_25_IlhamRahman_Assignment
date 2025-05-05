@@ -6,6 +6,8 @@
     <title>Registration | Assignment</title>
     <!-- css -->
     <link rel="stylesheet" href="./registration.css" />
+    <!-- javaScript -->
+    <script src="./registration.js"></script>
   </head>
   <body>
     <!-- navigation -->
@@ -29,28 +31,28 @@
     </nav>
 
     <!-- main section -->
-    <form action="#" method="post" onsubmit="validateForm()">
+    <form action="#" method="post" onsubmit="return validateForm()">
       <table>
         <tr>
-          <td><label for="eid">Employee ID: </label></td>
-          <td><input type="text" id="eid" /></td>
-          <td><span id="eidError"></span></td>
+          <td><label for="empID">Employee ID: </label></td>
+          <td><input type="text" id="empID" name="empID" required /></td>
+          <td><span id="empIDError"></span></td>
         </tr>
         <tr>
           <td><label for="fName">Full Name: </label></td>
-          <td><input type="text" id="fName" /></td>
+          <td><input type="text" id="fName" name="fName" required /></td>
           <td><span id="fNameError"></span></td>
         </tr>
         <tr>
           <td><label for="email">Email: </label></td>
-          <td><input type="text" id="email" /></td>
+          <td><input type="text" id="email" name="email" required /></td>
           <td><span id="emailError"></span></td>
         </tr>
         <tr>
           <td><label for="dept">Department: </label></td>
           <td>
-            <select name="dept" id="dept">
-              <option value="#">Select</option>
+            <select name="dept" id="dept" required>
+              <option value="">Select</option>
               <option value="HR">HR</option>
               <option value="Sales">Sales</option>
               <option value="IT">IT</option>
@@ -59,22 +61,22 @@
           </td>
         </tr>
         <tr>
-          <td><label for="jd">Joining Date: </label></td>
-          <td><input type="date" id="jd" /></td>
+          <td><label for="joinDate">Joining Date: </label></td>
+          <td><input type="date" id="joinDate" required /></td>
         </tr>
         <tr>
           <td><label for="gender">Gender: </label></td>
           <td id="gender">
-            <input type="radio" name="gender" value="male" />Male
-            <input type="radio" name="gender" value="female" />Female
-            <input type="radio" name="gender" value="female" />Other
+            <input type="radio" name="gender" value="Male" required />Male
+            <input type="radio" name="gender" value="Female" required />Female
+            <input type="radio" name="gender" value="Other" required />Other
           </td>
         </tr>
         <tr>
           <td><label for="empType">Employee Type: </label></td>
           <td id="empType">
-            <input type="checkbox" value="fullTime" />Full-Time
-            <input type="checkbox" value="partTime" />Part-Time
+            <input type="checkbox" value="Full-Time" />Full-Time
+            <input type="checkbox" value="Part-Time" />Part-Time
           </td>
         </tr>
         <tr>
@@ -89,5 +91,6 @@
     </form>
 
     <!-- submit display section -->
+    <div id="result"></div>
   </body>
 </html>
