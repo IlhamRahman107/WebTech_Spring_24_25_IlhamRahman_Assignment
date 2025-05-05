@@ -6,6 +6,8 @@
     <title>Employees | Assignment</title>
     <!-- css -->
     <link rel="stylesheet" href="./employees.css" />
+    <!-- javaScript -->
+    <script src="./employees.js"></script>
   </head>
   <body>
     <!-- navigation -->
@@ -31,5 +33,83 @@
     </nav>
 
     <!-- main section -->
+    <h1 id="tableTitle">Employee List</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+        <th>Joining Date</th>
+        <th>Gender</th>
+        <th>Employment Type</th>
+        <th>Option</th>
+      </tr>
+      <tr id="empDetails">
+        <td>EMP001</td>
+        <td>Ilham Rahman</td>
+        <td>rubaiyatilham107@gmail.com</td>
+        <td>HR</td>
+        <td>05/05/2025</td>
+        <td>Male</td>
+        <td>Full-Time</td>
+        <td>
+          <button onclick="return editME(this)">Edit</button>
+          <button onclick="return deleteME(this)">Delete</button>
+        </td>
+      </tr>
+      <tr id="empDetails">
+        <td>EMP002</td>
+        <td>John Doe</td>
+        <td>johndoe@gmail.com</td>
+        <td>Sales</td>
+        <td>05/05/2025</td>
+        <td>Male</td>
+        <td>Full-Time</td>
+        <td>
+          <button onclick="return editME(this)">Edit</button>
+          <button onclick="return deleteME(this)">Delete</button>
+        </td>
+      </tr>
+      <tr id="empDetails">
+        <td>EMP003</td>
+        <td>Jane Doe</td>
+        <td>janedoe@gmail.com</td>
+        <td>IT</td>
+        <td>05/05/2025</td>
+        <td>Female</td>
+        <td>Full-Time</td>
+        <td>
+          <button onclick="return editME(this)">Edit</button>
+          <button onclick="return deleteME(this)">Delete</button>
+        </td>
+      </tr>
+      <tr id="empDetails">
+        <td>EMP004</td>
+        <td>Rubaiyat Ilham</td>
+        <td>rubaiyatilham@gmail.com</td>
+        <td>Marketing</td>
+        <td>05/05/2025</td>
+        <td>Male</td>
+        <td>Full-Time</td>
+        <td>
+          <button onclick="return editME(this)">Edit</button>
+          <button onclick="return deleteME(this)">Delete</button>
+        </td>
+      </tr>
+      <tr id="empDetails">
+        <td>EMP005</td>
+        <td>Rubaiyat Rahman</td>
+        <td>rubaiyatrahman@gmail.com</td>
+        <td>Marketing</td>
+        <td>05/05/2025</td>
+        <td>Female</td>
+        <td>Part-Time</td>
+        <td>
+          <button onclick="return editME(this)">Edit</button>
+          <button onclick="return deleteME(this)">Delete</button>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

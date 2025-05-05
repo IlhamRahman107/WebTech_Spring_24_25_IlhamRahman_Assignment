@@ -67,3 +67,48 @@ nav .nav-container .links {
 }
 
 /* main section */
+body {
+  background-color: #00203fff;
+}
+
+#tableTitle {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+table {
+  margin: auto;
+  margin-top: 5rem;
+  width: auto;
+  box-shadow: 0 0 10px;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: skyblue;
+}
+
+table tr th {
+  padding-left: 50px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+table tr td {
+  padding-bottom: 20px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+table tr td label {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+table tr td button {
+  width: 75px;
+  font-size: 14px;
+  padding: 5px;
+}
